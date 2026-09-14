@@ -55,19 +55,25 @@ const emit = defineEmits(["update:modelValue"]);
   margin-bottom: 20px;
   padding-top: 7px;
   padding-bottom: 6px;
+
   cursor: pointer;
 
   span {
     @include r-s16-h19;
+
     position: relative;
+
     padding-left: 46px;
 
     &::before {
       @include p_center_v;
+
       width: 36px;
       height: 36px;
+
       content: "";
       transition: 0.3s;
+
       border-radius: 50%;
       background-color: $green-100;
       background-image: url("@/assets/img/diameter.svg");
